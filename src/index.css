@@ -20,6 +20,9 @@ code {
 .App {
   text-align: center;
   padding: 20px;
+  background-color: #f5fff5; /* Light cucumber green background */
+  font-family: monospace;
+  color: #2e6c2e; /* Darker green for text */
 }
 
 button {
@@ -27,12 +30,59 @@ button {
   font-size: 16px;
   margin-bottom: 20px;
   cursor: pointer;
-  background-color: #e0e0e0;
-  color: black;
+  background-color: #4caf50; /* Cucumber green */
+  color: white;
   border: none;
   border-radius: 5px;
+  font-family: monospace;
+  font-weight: bold;
+  border: 1px solid #2e6c2e; /* Darker green border */
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #c0c0c0;
+  background-color: #66bb6a; /* Lighter cucumber green on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional Gherkin-inspired styles */
+.gherkin-keyword {
+  font-weight: bold;
+  color: #2e7d32; /* Darker green for keywords */
+}
+
+.gherkin-comment {
+  color: #689f38; /* Olive green for comments */
+  font-style: italic;
+}
+
+.gherkin-block {
+  background-color: #f1f8e9; /* Very light green background */
+  border-left: 4px solid #4caf50;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.gherkin-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.gherkin-table th {
+  background-color: #c8e6c9; /* Light green header */
+  color: #1b5e20;
+  text-align: left;
+  padding: 8px;
+}
+
+.gherkin-table td {
+  padding: 8px;
+  border-bottom: 1px solid #e8f5e9;
+}
+
+.gherkin-table tr:nth-child(even) {
+  background-color: #f1f8e9;
 }

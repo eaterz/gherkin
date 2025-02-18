@@ -1,11 +1,9 @@
 import React from 'react';
 
-
-
-const TranslationRow = ({ english, latvian, example }) => (
-    <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
-        <td className="p-4 text-gray-900">{english}</td>
-        <td className="p-4 text-gray-900">{latvian}</td>
+const TranslationRow = ({ english, latvian }) => (
+    <tr className="border-b border-green-100 hover:bg-green-50 transition-colors">
+        <td className="p-4 text-green-800 font-mono">{english}</td>
+        <td className="p-4 text-green-800 font-mono">{latvian}</td>
     </tr>
 );
 
@@ -13,9 +11,9 @@ const TranslationsTable = ({ data }) => (
     <div className="overflow-x-auto">
         <table className="w-full border-collapse">
             <thead>
-            <tr className="bg-gray-100">
-                <th className="p-4 text-left text-gray-700 font-semibold">English</th>
-                <th className="p-4 text-left text-gray-700 font-semibold">Latviešu</th>
+            <tr className="bg-green-200">
+                <th className="p-4 text-left text-green-900 font-mono font-semibold">English</th>
+                <th className="p-4 text-left text-green-900 font-mono font-semibold">Latviešu</th>
             </tr>
             </thead>
             <tbody>
@@ -32,27 +30,22 @@ const Translations = () => {
         {
             english: "Feature",
             latvian: "Funkcionalitāte",
-
         },
         {
             english: "Scenario",
             latvian: "Scenārijs",
-
         },
         {
             english: "Given",
             latvian: "Kad",
-
         },
         {
             english: "When",
             latvian: "Ja",
-
         },
         {
             english: "Then",
             latvian: "Tad",
-
         },
         {
             english: "And",
@@ -81,11 +74,14 @@ const Translations = () => {
     ];
 
     return (
-        <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden border-2 border-green-300">
             <div className="p-6">
-                <h2 className="text-2xl font-bold text-gray-800 mb-6">
+                <h2 className="text-2xl font-bold text-green-800 mb-6 border-b-2 border-green-300 pb-3">
                     Gherkin Termini
                 </h2>
+                <p className="mb-4 text-green-700 font-mono text-sm italic">
+                    # Language: lv
+                </p>
                 <TranslationsTable data={translationsData} />
             </div>
         </div>

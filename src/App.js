@@ -14,7 +14,7 @@ function App() {
         <div className="App">
 
             <button onClick={toggleComponent}>
-                {showTranslations ? 'Rādīt FunctionalFeatures' : 'Rādīt Translations'}
+                {showTranslations ? 'Rādīt Functional Features' : 'Rādīt Translations'}
             </button>
 
 
