@@ -79,9 +79,6 @@ const Translations = () => {
                 <h2 className="text-2xl font-bold text-green-800 mb-6 border-b-2 border-green-300 pb-3">
                     Gherkin Termini
                 </h2>
-                <p className="mb-4 text-green-700 font-mono text-sm italic">
-                    # Language: lv
-                </p>
                 <TranslationsTable data={translationsData} />
             </div>
         </div>
